@@ -1,0 +1,476 @@
+{
+    "author": "Sixmax",
+    "name": "FLua",
+    "colors": {
+      "activityBar.background": "#333842",
+      "activityBar.foreground": "#acafac",
+      "activityBarBadge.background": "#528BFF",
+      "activityBarBadge.foreground": "#D7DAE0",
+      "button.background": "#4D78CC",
+      "button.foreground": "#FFFFFF",
+      "button.hoverBackground": "#6087CF",
+      "diffEditor.insertedTextBackground": "#00809B33",
+      "dropdown.background": "#353b45",
+      "dropdown.border": "#181A1F",
+      "editorIndentGuide.activeBackground": "#626772",
+      "editor.background": "#282C34",
+      "editor.foreground": "#d8d8d8",
+      "editor.lineHighlightBackground": "#99BBFF0A",
+      "editor.selectionBackground": "#3E4451",
+      "editorCursor.foreground": "#528BFF",
+      "editor.findMatchHighlightBackground": "#528BFF3D",
+      "editorGroup.background": "#21252B",
+      "editorGroup.border": "#181A1F",
+      "editorGroupHeader.tabsBackground": "#21252B",
+      "editorIndentGuide.background": "#ABB2BF26",
+      "editorLineNumber.foreground": "#636D83",
+      "editorLineNumber.activeForeground": "#ABB2BF",
+      "editorWhitespace.foreground": "#ABB2BF26",
+      "editorRuler.foreground": "#ABB2BF26",
+      "editorHoverWidget.background": "#21252B",
+      "editorHoverWidget.border": "#181A1F",
+      "editorSuggestWidget.background": "#21252B",
+      "editorSuggestWidget.border": "#181A1F",
+      "editorSuggestWidget.selectedBackground": "#2C313A",
+      "editorWidget.background": "#21252B",
+      "editorWidget.border": "#3A3F4B",
+      "input.background": "#1B1D23",
+      "input.border": "#181A1F",
+      "focusBorder": "#528BFF",
+      "list.activeSelectionBackground": "#2C313A",
+      "list.activeSelectionForeground": "#D7DAE0",
+      "list.focusBackground": "#2C313A",
+      "list.hoverBackground": "#2C313A66",
+      "list.highlightForeground": "#D7DAE0",
+      "list.inactiveSelectionBackground": "#2C313A",
+      "list.inactiveSelectionForeground": "#D7DAE0",
+      "notification.background": "#21252B",
+      "pickerGroup.border": "#528BFF",
+      "scrollbarSlider.background": "#4E566680",
+      "scrollbarSlider.activeBackground": "#747D9180",
+      "scrollbarSlider.hoverBackground": "#5A637580",
+      "sideBar.background": "#21252B",
+      "sideBarSectionHeader.background": "#333842",
+      "statusBar.background": "#21252B",
+      "statusBar.foreground": "#9DA5B4",
+      "statusBarItem.hoverBackground": "#2C313A",
+      "statusBar.noFolderBackground": "#21252B",
+      "tab.activeBackground": "#282C34",
+      "tab.activeForeground": "#D7DAE0",
+      "tab.border": "#181A1F",
+      "tab.inactiveBackground": "#21252B",
+      "titleBar.activeBackground": "#21252B",
+      "titleBar.activeForeground": "#9DA5B4",
+      "titleBar.inactiveBackground": "#21252B",
+      "titleBar.inactiveForeground": "#9DA5B4",
+      "statusBar.debuggingForeground": "#FFFFFF",
+      "extensionButton.prominentBackground": "#2BA143",
+      "extensionButton.prominentHoverBackground": "#37AF4E",
+      "badge.background": "#528BFF",
+      "badge.foreground": "#D7DAE0",
+      "peekView.border": "#528BFF",
+      "peekViewResult.background": "#21252B",
+      "peekViewResult.selectionBackground": "#2C313A",
+      "peekViewTitle.background": "#1B1D23",
+      "peekViewEditor.background": "#1B1D23"
+    },
+
+    // https://macromates.com/manual/en/language_grammars
+
+    "tokenColors": 
+    [
+/*
+  _____            _                       
+ / ____|          | |                      
+| |     __ _ _ __ | |_ _   _ _ __ ___  ___ 
+| |    / _` | '_ \| __| | | | '__/ _ \/ __|
+| |___| (_| | |_) | |_| |_| | | |  __/\__ \
+ \_____\__,_| .__/ \__|\__,_|_|  \___||___/
+            | |                            
+            |_|                 
+*/
+      {
+        "name": "Local",
+        "scope": [
+          "storage.modifier.local.lua"
+        ],
+        "settings": 
+        {
+          "foreground": "#0be5de"
+        }
+      },
+
+      {
+        "name": "Keyword Control",
+        "scope": [
+          "keyword.control.lua"
+        ],
+        "settings": 
+        {
+          "foreground": "#0be5de"
+        }
+      },
+
+      {
+        "name": "Function Name",
+        "scope": [
+          "entity.name.function.lua"
+        ],
+        "settings": 
+        {
+          "foreground": "#798cfc"
+        }
+      },
+
+      {
+        "name": "Function Name & Parameters Seperator",
+        "scope": [
+          "punctuation.separator.parameter.lua"
+        ],
+        "settings": 
+        {
+          "foreground": "#FFFFFF"
+        }
+      },
+
+      {
+        "name": "Function Parameter Paranthasis Beginning",
+        "scope": [
+          "punctuation.definition.parameters.begin.lua"
+        ],
+        "settings": 
+        {
+          "foreground": "#FFFFFF"
+        }
+      },
+
+      {
+        "name": "Function Parameter Paranthasis Ending",
+        "scope": [
+          "punctuation.definition.parameters.end.lua"
+        ],
+        "settings": 
+        {
+          "foreground": "#FFFFFF"
+        }
+      },
+
+      {
+        "name": "Function Parameters",
+        "scope": [
+          "variable.parameter.function.lua"
+        ],
+        "settings": 
+        {
+          "foreground": "#8ee088"
+        }
+      },
+
+      {
+        "name": "Function Parameter Seperators",
+        "scope": [
+          "punctuation.separator.arguments.lua"
+        ],
+        "settings": 
+        {
+          "foreground": "#FFFFFF"
+        }
+      },     
+
+
+
+
+/*
+ _   _                 _                   
+| \ | |               | |                  
+|  \| |_   _ _ __ ___ | |__   ___ _ __ ___ 
+| . ` | | | | '_ ` _ \| '_ \ / _ \ '__/ __|
+| |\  | |_| | | | | | | |_) |  __/ |  \__ \
+|_| \_|\__,_|_| |_| |_|_.__/ \___|_|  |___/
+                                           
+*/
+      {
+        "name": "Int Hex",
+        "scope": [
+          "constant.numeric.integer.hexadecimal.lua"
+        ],
+        "settings": 
+        {
+          "foreground": "#dbab43"
+        }
+      },
+      {
+        "name": "Float Hex",
+        "scope": [
+          "constant.numeric.float.hexadecimal.lua"
+        ],
+        "settings": 
+        {
+          "foreground": "#dbab43"
+        }
+      },
+      {
+        "name": "Ints",
+        "scope": [
+          "constant.numeric.integer.lua"
+        ],
+        "settings": 
+        {
+          "foreground": "#dbab43"
+        }
+      },
+      {
+        "name": "Floats",
+        "scope": [
+          "constant.numeric.float.lua"
+        ],
+        "settings": 
+        {
+          "foreground": "#dbab43"
+        }
+      },
+
+
+
+
+/*
+  _____ _        _                 
+ / ____| |      (_)                
+| (___ | |_ _ __ _ _ __   __ _ ___ 
+ \___ \| __| '__| | '_ \ / _` / __|
+ ____) | |_| |  | | | | | (_| \__ \
+|_____/ \__|_|  |_|_| |_|\__, |___/
+                          __/ |    
+                         |___/     
+*/
+      {
+        "name": "Single Strings",
+        "scope": [
+          "string.quoted.single.lua"
+        ],
+        "settings": 
+        {
+          "foreground": "#878787"
+        }       
+      },
+      {
+        "name": "Double Strings",
+        "scope": [
+          "string.quoted.double.lua"
+        ],
+        "settings": 
+        {
+          "foreground": "#878787"
+        }       
+      },
+      {
+        "name": "MultiLine Strings",
+        "scope": [
+          "string.quoted.other.multiline.lua"
+        ],
+        "settings": 
+        {
+          "foreground": "#878787"
+        }       
+      },
+
+
+
+
+/*
+  _____                                     _       
+ / ____|                                   | |      
+| |     ___  _ __ ___  _ __ ___   ___ _ __ | |_ ___ 
+| |    / _ \| '_ ` _ \| '_ ` _ \ / _ \ '_ \| __/ __|
+| |___| (_) | | | | | | | | | | |  __/ | | | |_\__ \
+ \_____\___/|_| |_| |_|_| |_| |_|\___|_| |_|\__|___/
+                                                    
+                                                    
+*/
+      {
+        "name": "Comment",
+        "scope": [
+          "comment.line.double-dash.lua"
+        ],
+        "settings": 
+        {
+          "foreground": "#636363"
+        }       
+      },
+      {
+        "name": "Block Comment",
+        "scope": [
+          "comment.block.lua"
+        ],
+        "settings": 
+        {
+          "foreground": "#636363"
+        }       
+      },
+
+
+      
+
+/*
+  _____       _        
+ / ____|     | |       
+| |  __  ___ | |_ ___  
+| | |_ |/ _ \| __/ _ \ 
+| |__| | (_) | || (_) |
+ \_____|\___/ \__\___/ 
+                       
+                       
+*/
+      {
+        "name": "Goto Keyword",
+        "scope": [
+          "keyword.control.goto.lua"
+        ],
+        "settings": 
+        {
+          "foreground": "#0be5de"
+        }          
+      },
+      {
+        "name": "Goto Label Placeholder",
+        "scope": [
+          "constant.other.placeholder.lua"
+        ],
+        "settings": 
+        {
+          "foreground": "#e04ff7",
+          "fontstyle": "italic"
+        }          
+      },
+      {
+        "name": "Goto Label",
+        "scope": [
+          "constant.other.placeholder.lua"
+        ],
+        "settings": 
+        {
+          "foreground": "#e04ff7",
+          "fontstyle": "bold"
+        }          
+      },
+      
+      
+
+/*
+ _  __                                _     
+| |/ /                               | |    
+| ' / ___ _   ___      _____  _ __ __| |___ 
+|  < / _ \ | | \ \ /\ / / _ \| '__/ _` / __|
+| . \  __/ |_| |\ V  V / (_) | | | (_| \__ \
+|_|\_\___|\__, | \_/\_/ \___/|_|  \__,_|___/
+           __/ |                            
+          |___/    
+*/
+      {
+        "name": "Keywords",
+        "scope": [
+          "keyword.control.lua"
+        ],
+        "settings": 
+        {
+          "foreground": "#0be5de"
+        }          
+      },
+      {
+        "name": "Language Specific Constant Keywords",
+        "scope": [
+          "constant.language.lua"
+        ],
+        "settings": 
+        {
+          "foreground": "#0be5de"
+        }          
+      },
+      {
+        "name": "Lua-Self",
+        "scope": [
+          "variable.language.self.lua"
+        ],
+        "settings": 
+        {
+          "foreground": "#f2c3a4"
+        }          
+      },
+
+
+
+      
+/*
+ ______                _   _                 
+|  ____|              | | (_)                
+| |__ _   _ _ __   ___| |_ _  ___  _ __  ___ 
+|  __| | | | '_ \ / __| __| |/ _ \| '_ \/ __|
+| |  | |_| | | | | (__| |_| | (_) | | | \__ \
+|_|   \__,_|_| |_|\___|\__|_|\___/|_| |_|___/
+                                             
+                                             
+*/
+      {
+        "name": "Support Functions",
+        "scope": [
+          "support.function.lua"
+        ],
+        "settings": 
+        {
+          "foreground": "#a0a0a0"
+        }          
+      },      
+      {
+        "name": "Support Function Libraries",
+        "scope": [
+          "support.function.library.lua"
+        ],
+        "settings": 
+        {
+          "foreground": "#a0a0a0"
+        }          
+      },
+      {
+        "name": "Support Function Any Method",
+        "scope": [
+          "support.function.any-method.lua"
+        ],
+        "settings": 
+        {
+          "foreground": "#a0a0a0"
+        }          
+      },        
+      {
+        "name": "Other Variables",
+        "scope": [
+          "variable.other.lua"
+        ],
+        "settings": 
+        {
+          "foreground": "#a0a0a0"
+        }          
+      },
+
+
+/*
+  ____                       _                 
+ / __ \                     | |                
+| |  | |_ __   ___ _ __ __ _| |_ ___  _ __ ___ 
+| |  | | '_ \ / _ \ '__/ _` | __/ _ \| '__/ __|
+| |__| | |_) |  __/ | | (_| | || (_) | |  \__ \
+ \____/| .__/ \___|_|  \__,_|\__\___/|_|  |___/
+       | |                                     
+       |_|  
+*/
+      {
+        "name": "Operators",
+        "scope": [
+          "keyword.operator.lua"
+        ],
+        "settings": 
+        {
+          "foreground": "#d1d843" //fc8e62
+        }          
+      }    
+    ]
+  }
