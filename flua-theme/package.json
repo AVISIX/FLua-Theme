@@ -1,7 +1,7 @@
 {
 	"name": "vscode-sixmax-flua",
 	"displayName": "FLua Theme",
-	"description": "Custom VSCode Theme used for private use by Sixmax. Based of OneDark by akamud.",
+	"description": "Custom VSCode Theme to visualize LUA Syntax",
 	"version": "1.0.0",
 	"publisher": "Sixmax",
 	"license": "Apache 2.0",
